@@ -1,0 +1,57 @@
+.contenedor
+{
+    background-color: rgba(203, 178, 216, 0.63);
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas: "header header header"
+                        "nav nav nav"
+                        "section section ads"
+                        "footer footer footer"  ;
+}
+.contenedor .header
+{
+    background-color: rgb(235, 230, 211);
+    grid-column: header;
+}
+.contenedor .nav
+{
+    background-color: rgba(207, 235, 226, 0.918);
+    grid-column: nav;
+}
+.contenedor .section
+{
+    background-color: rgba(201, 221, 215, 0.704);
+    grid-column: section;
+    display: flex;
+    flex-direction: row;
+}
+.contenedor .section>div
+{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+}
+.contenedor .ads
+{
+    background-color: rgb(226, 207, 185);
+    grid-column: ads;
+}
+.contenedor .ads>div
+{
+    background-color: cornsilk;
+    margin: 10px;
+    padding: 10px;
+    height: 15%;
+
+}
+.contenedor .footer
+{
+    background-color: rgb(240, 229, 239);
+    grid-column: footer;
+}
